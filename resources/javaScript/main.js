@@ -29,6 +29,6 @@ function financiamiento() {
     let cuotas_menuales = dinero / cuotas;
     let intereses = cuotas_menuales * TAZA_ESPECIAL;
     let final = intereses;
-    alert(final);
+    alert(`tus cuotas en ${TAZA_ESPECIAL} son de ${final} por mes` );
 }
-financiamiento();
+
