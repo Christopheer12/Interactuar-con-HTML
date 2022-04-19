@@ -27,8 +27,8 @@ function financiamiento() {
     let cuotas = parseInt(document.getElementById("cantidad_de_cuotas").value);
     /* let prestador = document.getElementsByClassName */
     let cuotas_menuales = dinero / cuotas;
-    let intereses = cuotas_menuales * TAZA_ESPECIAL;
+    let intereses = cuotas_menuales * banco;
     let final = intereses;
-    alert(`tus cuotas en ${TAZA_ESPECIAL} son de ${final} por mes` );
+    alert(`tus cuotas en ${banco} son de ${final} por mes` );
 }
 
