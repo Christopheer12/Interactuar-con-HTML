@@ -3,7 +3,7 @@ const ESPACIO = (" ");
 const UVA = 18 / 100;
 const Especial = 36 / 100;
 const IUDU = 50 / 100;
-const Santander = 56 / 100;
+const Santander = 55.5 / 100;
 
 function bancos() {
     let dinero = parseInt(document.getElementById("dinero_a_prestar").value);
@@ -11,19 +11,28 @@ function bancos() {
     let bancosSeleccion = document.getElementById("bancosSeleccion").value;
     switch (bancosSeleccion) {
         case "UVA":
-            let cuotasMenuales = dinero / cuotas;
-            let intereses = cuotasMenuales * UVA;
-            let finalPorMes = cuotasMenuales + intereses
-            alert(` tus cuotas UVA son de ${finalPorMes} por mes, recuerda que al ser una taza uva esta sujeta a inflacion`);
+            let cuotasMenualesUva = dinero / cuotas;
+            let interesesUva = cuotasMenualesUva * UVA;
+            let finalPorMesUva = cuotasMenualesUva + interesesUva
+            alert(` tus cuotas UVA son de ${finalPorMesUva} por mes, recuerda que al ser una taza uva esta sujeta a inflacion`);
             break;
         case "Especial":
-            alert("taza especial");
+            let cuotasMenualesEspecial = dinero / cuotas;
+            let interesesEspecial = cuotasMenualesEspecial * Especial;
+            let finalPorMesEspecial = cuotasMenualesEspecial + interesesEspecial
+            alert(`${finalPorMesEspecial}`);
             break;
         case "IUDU":
-            alert("taza iudu");
+            let cuotasMenualesIUDU = dinero / cuotas;
+            let interesesIUDU = cuotasMenualesIUDU * IUDU;
+            let finalPorMesIUDU = cuotasMenualesIUDU + interesesIUDU
+            alert(`${finalPorMesIUDU}`);
             break;
         case "Santander":
-            alert("taza santander");
+            let cuotasMenualesSantander = dinero / cuotas;
+            let interesesSantander = cuotasMenualesSantander * Santander;
+            let finalPorMesSantander = cuotasMenualesSantander + interesesSantander
+            alert(`${finalPorMesSantander}`);
             break;
 
     }
