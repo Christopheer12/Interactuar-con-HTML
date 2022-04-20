@@ -15,10 +15,25 @@ function bancos() {
         let finalPorMes = cuotasMenuales + intereses
         alert(` ${finalPorMes} por mes`);
     }
-    else if(bancosSeleccion = Especial){
+    else if (bancosSeleccion = Especial) {
         let cuotasMenuales = dinero / cuotas;
         let intereses = cuotasMenuales * Especial;
-        let finalPorMess = cuotasMenuales + intereses
-        alert(` ${finalPorMess} por mes`);
-}
+        let finalPorMes = cuotasMenuales + intereses
+        alert(` ${finalPorMes} por mes`);
+    }
+    else if (bancosSeleccion = IUDU) {
+        let cuotasMenuales = dinero / cuotas;
+        let intereses = cuotasMenuales * IUDU;
+        let finalPorMes = cuotasMenuales + intereses
+        alert(` ${finalPorMes} por mes`);
+    }
+    else if (bancosSeleccion = Santander) {
+        let cuotasMenuales = dinero / cuotas;
+        let intereses = cuotasMenuales * Santander;
+        let finalPorMes = cuotasMenuales + intereses
+        alert(` ${finalPorMes} por mes`);
+    }
+    else{
+        alert("no esta funcionado bien");
+    }
 }
