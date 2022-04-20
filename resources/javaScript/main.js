@@ -20,49 +20,21 @@ function bancos() {
             let cuotasMenualesEspecial = dinero / cuotas;
             let interesesEspecial = cuotasMenualesEspecial * Especial;
             let finalPorMesEspecial = cuotasMenualesEspecial + interesesEspecial
-            alert(`${finalPorMesEspecial}`);
+            alert(`Tu cuenta fija en taza especial es de : ${finalPorMesEspecial}`);
             break;
         case "IUDU":
             let cuotasMenualesIUDU = dinero / cuotas;
             let interesesIUDU = cuotasMenualesIUDU * IUDU;
             let finalPorMesIUDU = cuotasMenualesIUDU + interesesIUDU
-            alert(`${finalPorMesIUDU}`);
+            alert(`Tu cuenta fija en taza IUDU es de :${finalPorMesIUDU}`);
             break;
         case "Santander":
             let cuotasMenualesSantander = dinero / cuotas;
             let interesesSantander = cuotasMenualesSantander * Santander;
             let finalPorMesSantander = cuotasMenualesSantander + interesesSantander
-            alert(`${finalPorMesSantander}`);
+            alert(`Tu cuenta fija en taza Santander es de :${finalPorMesSantander}`);
             break;
 
     }
 }
 
-
-/*  if (bancosSeleccion = UVA) {
-     let cuotasMenuales = dinero / cuotas;
-     let intereses = cuotasMenuales * UVA;
-     let finalPorMes = cuotasMenuales + intereses
-     alert(` ${finalPorMes} por mes`);
- }
- else if (bancosSeleccion = Especial) {
-     let cuotasMenuales = dinero / cuotas;
-     let intereses = cuotasMenuales * Especial;
-     let finalPorMes = cuotasMenuales + intereses
-     alert(` ${finalPorMes} por mes`);
- }
- else if (bancosSeleccion = IUDU) {
-     let cuotasMenuales = dinero / cuotas;
-     let intereses = cuotasMenuales * IUDU;
-     let finalPorMes = cuotasMenuales + intereses
-     alert(` ${finalPorMes} por mes`);
- }
- else if (bancosSeleccion = Santander) {
-     let cuotasMenuales = dinero / cuotas;
-     let intereses = cuotasMenuales * Santander;
-     let finalPorMes = cuotasMenuales + intereses
-     alert(` ${finalPorMes} por mes`);
- }
- else {
-     alert("no esta funcionado bien");
- } */
