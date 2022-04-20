@@ -8,7 +8,7 @@ const Santander = 56 / 100;
 function bancos() {
     let dinero = parseInt(document.getElementById("dinero_a_prestar").value);
     let cuotas = parseInt(document.getElementById("cantidad_de_cuotas").value);
-    let bancosSeleccion = document.getElementById("bancosSeleccion");
+    let bancosSeleccion = document.getElementById("bancosSeleccion").value;
     if (bancosSeleccion = UVA) {
         let cuotasMenuales = dinero / cuotas;
         let intereses = cuotasMenuales * UVA;
