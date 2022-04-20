@@ -25,14 +25,13 @@
                 placeholder="¿Cantidad de cuotas deseadas?">
             <p id="prestador">Prestador</p>
 
-            <select id="banco">
-               <option id="UVA">UVA</option>
-               <option id="Especial">Especial</option>
-               <option id="IUDU">IUDU</option>
-               <option id="Santander">Santander</option>
+            <select id="bancosSeleccion" onchange="bancos();">
+                <option id="UVA" value="UVA">Uva</option>
+                <option id="Especial" value="Especial">Especial</option>
+                <option id="IUDU" value="IUDU">IUDU</option>
+                <option id="Santander" value="Santander">Santander</option>
             </select>
-            
-                <input class="botons" type="submit" onclick="financiamiento()">
+            <input class="botons" type="submit" onclick="bancos()">
         </section>
     </main>
     <footer>

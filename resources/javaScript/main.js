@@ -1,34 +1,24 @@
 
-
-
 const ESPACIO = (" ");
-const TAZA_UVA = 18 / 100;
-const TAZA_ESPECIAL = 36 / 100;
-const TAZA_MILA = 50 / 100;
-const TAZA_SANTANDER = 55.5 / 100;
+const UVA = 18 / 100;
+const Especial = 36 / 100;
+const IUDU = 50 / 100;
+const Santander = 56 / 100;
 
-switch (banco) {
-    case "UVA": TAZA_UVA;
-        break;
-    case "Especial": TAZA_ESPECIAL;
-        break;
-    case "IUDU": TAZA_MILA;
-        break;
-    case "Santander": TAZA_SANTANDER;
-        break;
-    default:
-        alert("seleccione una taza");
-        break;
-}
-
-
-function financiamiento() {
+function bancos() {
     let dinero = parseInt(document.getElementById("dinero_a_prestar").value);
     let cuotas = parseInt(document.getElementById("cantidad_de_cuotas").value);
-    /* let prestador = document.getElementsByClassName */
-    let cuotas_menuales = dinero / cuotas;
-    let intereses = cuotas_menuales * banco;
-    let final = intereses;
-    alert(`tus cuotas en ${banco} son de ${final} por mes` );
+    let bancosSeleccion = document.getElementById("bancosSeleccion");
+    if (bancosSeleccion = UVA) {
+        let cuotasMenuales = dinero / cuotas;
+        let intereses = cuotasMenuales * UVA;
+        let finalPorMes = cuotasMenuales + intereses
+        alert(` ${finalPorMes} por mes`);
+    }
+    else if(bancosSeleccion = Especial){
+        let cuotasMenuales = dinero / cuotas;
+        let intereses = cuotasMenuales * Especial;
+        let finalPorMess = cuotasMenuales + intereses
+        alert(` ${finalPorMess} por mes`);
 }
-
+}
