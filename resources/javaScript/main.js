@@ -33,7 +33,7 @@ function bancos() {
         let finalPorMes = cuotasMenuales + intereses
         alert(` ${finalPorMes} por mes`);
     }
-    else{
+    else {
         alert("no esta funcionado bien");
     }
 }
